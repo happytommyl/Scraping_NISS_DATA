@@ -9,4 +9,4 @@ Scraping NISS Data with given keyword
 
 ## warning
 
-本软件使用chromedriver作为浏览器驱动，需要本机安装有对应版本的Google Chrome浏览器（版本不低于73）。
+本软件使用chromedriver作为浏览器驱动，需要本机安装有对应版本的Google Chrome浏览器（版本不低于73），或前往http://chromedriver.chromium.org/ 下载对应浏览器版本及系统的chromedriver。
