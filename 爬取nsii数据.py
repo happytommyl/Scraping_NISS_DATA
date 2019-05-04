@@ -9,8 +9,11 @@ import math
 
 
 #设定爬虫网址
-name = "Abies fanjingshanensis"
+name = input("查询关键字：")
 url = "http://nsii.org.cn/2017/query.php?name=" + name
+
+# 设置查询页数
+count = input("设置查询页数：")
 
 # 导入浏览器驱动
 driver = webdriver.Chrome()
@@ -23,7 +26,7 @@ python_button.click()
 
 # 循环点击加载更多
 try:
-    for i in range(559): # 调整加载次数，约为总条目/10
+    for i in range(count): # 调整加载次数，约为总条目/10
         try: 
             button_loadmore = driver.find_element_by_id("btnLoadMore")
             button_loadmore.click()
