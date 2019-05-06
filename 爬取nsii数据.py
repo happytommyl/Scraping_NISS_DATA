@@ -13,7 +13,7 @@ name = input("查询关键字：")
 url = "http://nsii.org.cn/2017/query.php?name=" + name
 
 # 设置查询页数
-count = input("设置查询页数：")
+count = int(input("设置查询页数："))
 
 # 导入浏览器驱动
 driver = webdriver.Chrome()
